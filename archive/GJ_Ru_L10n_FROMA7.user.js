@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name            Game Jolt ru-RU L10n
-// @name:ru         Русская локализация Game Jolt
+// @name            Game Jolt ru-RU L10n FROMA7
+// @name:ru         Русская локализация Game Jolt FROMA7
 // @author          Deflecat, eiser_dip
 // @contributionURL https://boosty.to/rushanm
 // @description     Translates the Game Jolt website into Russian
@@ -12,10 +12,10 @@
 // @license         MIT
 // @match           https://*.gamejolt.com/*
 // @match           https://gamejolt.com/*
-// @namespace       gjrul10n
+// @namespace       gjrul10nfroma7
 // @supportURL      https://github.com/RushanM/Game-Jolt-ru-RU-L10n/issues
 // @updateURL       https://github.com/RushanM/Game-Jolt-ru-RU-L10n/raw/master/archive/GJ_Ru_L10n_FROMA7.user.js
-// @version         A1-FROMA7
+// @version         A2-FROMA7
 // ==/UserScript==
 
 (function() {
