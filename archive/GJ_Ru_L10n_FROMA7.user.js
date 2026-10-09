@@ -1,21 +1,21 @@
 // ==UserScript==
-// @name            Game Jolt Russian Translation
-// @name:ru         Русификатор Game Jolt
-// @author          Deflecta, eiser_dip
+// @name            Game Jolt ru-RU L10n
+// @name:ru         Русская локализация Game Jolt
+// @author          Deflecat, eiser_dip
 // @contributionURL https://boosty.to/rushanm
-// @description     Translates the gamejolt.com website into Russian.
-// @description:ru  Переводит сайт gamejolt.com на русский язык.
-// @downloadURL     https://github.com/RushanM/GameJolt-Russian-Translation/raw/main/%D0%A0%D1%83%D1%81%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%20Game%20Jolt.user.js
+// @description     Translates the Game Jolt website into Russian
+// @description:ru  Переводит сайт Game Jolt на русский язык
+// @downloadURL     https://github.com/RushanM/Game-Jolt-ru-RU-L10n/raw/master/archive/GJ_Ru_L10n_FROMA7.user.js
 // @grant           none
-// @homepageURL     https://github.com/RushanM/GameJolt-Russian-Translation
+// @homepageURL     https://github.com/RushanM/Game-Jolt-ru-RU-L10n
 // @icon            https://s.gjcdn.net/img/favicon.png
 // @license         MIT
 // @match           https://*.gamejolt.com/*
 // @match           https://gamejolt.com/*
-// @namespace       gjrutranslation
-// @supportURL      https://github.com/RushanM/GameJolt-Russian-Translation/issues
-// @updateURL       https://github.com/RushanM/GameJolt-Russian-Translation/raw/main/%D0%A0%D1%83%D1%81%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%BE%D1%80%20Game%20Jolt.user.js
-// @version         1-B7
+// @namespace       gjrul10n
+// @supportURL      https://github.com/RushanM/Game-Jolt-ru-RU-L10n/issues
+// @updateURL       https://github.com/RushanM/Game-Jolt-ru-RU-L10n/raw/master/archive/GJ_Ru_L10n_FROMA7.user.js
+// @version         A1-FROMA7
 // ==/UserScript==
 
 (function() {
@@ -33,7 +33,7 @@
         document.head.appendChild(link);
     });
 
-    // Применение стилей ЦСС
+    // Применение стилей
     const style = document.createElement('style');
     style.textContent = `
         body {
@@ -409,12 +409,6 @@
                 newText: 'Монеты'
             }]
         }, {
-            selector: 'div.fill-offset > h2',
-            replacements: [{
-                oldText: 'Pride Month 2024',
-                newText: 'МЕСЯЦ ГОРДОСТИ 2024'
-            }]
-        }, {
             selector: 'div.tooltip-inner',
             replacements: [{
                 oldText: 'Notifications',
@@ -757,11 +751,11 @@
             }
         });
 
-        // Дополнительные замены, такие как «official», «cancelled» и т. д.
+        // Дополнительные замены, такие как official, cancelled и т. д.
         handleSpecialReplacements();
     }
 
-    // Функция для специальных замен, таких как «official», «cancelled» и т. д.
+    // Функция для специальных замен, таких как official, cancelled и т. д.
     function handleSpecialReplacements() {
         // Замены «official»
         document.querySelectorAll('div.-title[title*="(Official)"]').forEach(element => {
@@ -769,7 +763,7 @@
             element.textContent = element.textContent.replace('(Official)', '(официальная)');
         });
 
-        // Замены «cancelled» с учётом различных форм
+        // Замены cancelled с учётом различных форм
         document.querySelectorAll('div.-title').forEach(element => {
             const anyCancelledWordForm = /(\[|\()?(\s*CANCELLED\s*|\s*cancelled\s*|\s*Cancelled\s*)(\]|\))?/gi;
             const cancelledIsFullWord = /^\s*CANCELLED\s*$/i;
@@ -804,36 +798,24 @@
             }
         });
 
-        // Замена «ELLIE'S» на «ЭЛЛИС»
+        // Замена ELLIE'S на «ЭЛЛИС»
         document.querySelectorAll('div.-title[title*="ELLIE\'S"]').forEach(element => {
             element.title = element.title.replace('ELLIE\'S', 'ЭЛЛИС');
             element.textContent = element.textContent.replace('ELLIE\'S', 'ЭЛЛИС');
         });
     }
 
-    // Замена изображения
-    function replaceImage() {
-        const imgSelector = 'a[href="https://gamejolt.com/p/game-jolt-s-celebration-of-pride-month-has-begun-go-to-the-shop-to-mxvnfzwg"] img[src="https://m.gjcdn.net/gen/400/32981814-sd4xeihs-v4.webp"]';
-        const img = document.querySelector(imgSelector);
-        if (img && img.src !== 'https://i.imgur.com/sqNFMx6.png') {
-            img.src = 'https://i.imgur.com/sqNFMx6.png';
-        }
-    }
-
     // Инициализация переводов и замены изображений после загрузки DOM
     function init() {
         translateText();
-        replaceImage();
     }
 
     document.addEventListener('DOMContentLoaded', init);
 
-    // MutationObserver
     const observer = new MutationObserver(() => {
         clearTimeout(observer.timeout);
         observer.timeout = setTimeout(() => {
             translateText();
-            replaceImage();
         }, 5);
     });
 
