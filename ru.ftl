@@ -1,6 +1,6 @@
 ### Документ русской локализации сценария русской локализации Game Jolt Дефлеката
 
-## Составные части заголовка вкладки
+## Заголовок вкладки
 -gj = Game Jolt
 -share-your-creations = Делитесь своими творениями
 -gj-title-suffix = · { -gj }
@@ -37,12 +37,10 @@ community-title-mandela-catalogue = Сообщество «The Mandela Catalogue
 community-title-meihemu = || Сообщество Meihemu ||
 
 ## Шапка сайта
-
 header-discover = ОБЗОР
 header-store = КАТАЛОГ
 
 ## Шапка сайта / Многоточиевое меню
-
 get-app = Скачать приложение
 site-guidelines = Документация сайта
 become-creator = Стать творцом
@@ -50,13 +48,12 @@ merch = Фирменные товары
 about = О «Game Jolt»
 help-faqs = Справка
 
-## …Многоточиевое меню / Для разработчиков
+## Шапка сайта / Многоточиевое меню / Для разработчиков
 for-developers = Для разработчиков
 game-api = Интерфейс для игр
 game-marketplace = Маркетплейс игр
 
-## …Многоточиевое меню / Подвал сайта
-
+## Шапка сайта / Многоточиевое меню / Подвал сайта
 support = Служба поддержки
 terms = Условия
 privacy = Использование личных данных
@@ -64,50 +61,152 @@ child-safety = Обеспечение безопасности детей
 cookie-policy = Политика использования сохранений сайта
 change-language = Сменить язык
 
-## …Подвал сайта / Сменить язык
-
-## …Сменить язык / Окно выбора языка
-
-language-dialog-close = Закрыть
-language-dialog-title = Выбрать язык
-language-dialog-note = Сайт переводит народ через предоставленные нами сервисы и не проходит вычитку. Посему его работа может быть не всегда полной или точной.
-
-# …Окно выбора языка / Название русской локализации сценария
-custom-language-option = Русский (от сценария локализации GJ Дефлеката)
+## Шапка сайта / Подвал сайта / Сменить язык / Окно выбора языка
+langs-close = Закрыть
+langs-title = Выбрать язык
+langs-script-lang = Русский (от сценария локализации GJ Дефлеката)
+langs-desc = Сайт переводит народ через предоставленные нами сервисы и не проходит вычитку. Посему его работа может быть не всегда полной или точной.
 
 ## Шапка сайта / Поле поиска
-
 search = Поиск
     .placeholder = Поиск
-
-# …Поле поиска / Подсказка под полем поиска
 search-query-help = Введите свой поисковый запрос и он найдётся наиболее действенным способом…
 
-## Подсказки левой панели
+## Шапка сайта / Окно уведомлений
+notifs-filter = Отфильтровать
+notifs-mark = Пометить все как прочтённые
+notifs-followed-you = подписался на получение ваших записей
+notifs-about = около { $value } часов назад
+notifs-liked = понравилась
+notifs-ago-day = { $value } день назад
+notifs-ago-days = { $value ->
+    [one] { $value } день назад
+    [few] { $value } дня назад
+    [many] { $value } дней назад
+   *[other] { $value } дня назад
+}
+notifs-followed = подписался на журнал разработки
+notifs-replied = ответил под вашим комментарием в разделе комментариев
+notifs-view = Посмотреть все
+
+## Шапка сайта / Окно запросов в приятели
+requests-title = Friend Requests
+requests-sent = Sent Requests
+
+## Шапка сайта / Окно профиля
+profile-trophies = Trophies
+profile-link = Profile
+profile-games = Games
+profile-settings = Settings
+profile-analytics = Analytics
+profile-token = Game Token
+# Dark Mode
+# on
+# Invite a friend
+# Logout
+
+## Левая панель / Подсказки левой панели
 tooltip-notifications = Уведомления
 tooltip-friend-requests = Запросы в приятели
 tooltip-chat-and-friends = Чат и приятели
 tooltip-shop = Магазин
 tooltip-backpack = Рюкзак
 
-## Блок заряда
+## Левая панель / Панель чатов
+chats = Chats
+chats-friends = Friends
+chats-hint = Filter...
+chats-invite = Invite a friend
+
+## Левая панель / Окно магазина
+shop-close = Close
+shop-joltbux = JOLTBUX
+shop-joltbux-get = Get Joltbux
+shop-coins = COINS
+shop-coins-get = Get Coins
+shop-boosts = BOOSTS
+shop-sticker-pack = Sticker pack
+shop-refill = Emergency Charge Refill
+shop-boost-day = Game Boost (1 Day)
+shop-boost-week = Game Boost (1 Week)
+shop-boost-month = Game Boost (1 Month)
+
+## Левая панель / Рюкзак
+backpack-shop = Open Shop
+backpack-gifts = GIFTS
+backpack-pack = Sticker pack
+backpack-summer = Summer
+backpack-butterflies = Social Butterflies
+backpack-crab = Everything is Crab (Launch Edition)
+backpack-gems = Halloween Gems
+
+## Левая панель / Окно квестов
+quests-title = DAILY QUESTS
+# quests-h = 2h
+quests-comments = Like 5 comments
+quests-realm = Follow a realm
+quests-game = Follow a game
+quests-new = NEW QUESTS
+quests-circus = Joltober 2026 Day 10: Circus
+# 21h
+# Celebrate Silver Pines Posts!
+# 4d
+# Fandom Friday: Bendy
+# 1d
+# Can You Survive in Silver Pines?
+# 4d
+# Jolters to Watch: @IRONNESTgame
+
+## Левая панель / Окно квестов / Окно квеста
+# DAILY QUEST
+# LIKE 5 COMMENTS
+# In this land, there is an age-old custom of raising one's thumb in support of a good point. Let's honor this tradition!
+# 0%
+# OBJECTIVES
+# Like 5 comments
+# 0 / 5
+# REWARDS
+
+## Левая панель / Джолтодекс
+# Which collection would you like to browse?
+# Filter...
+
+## Левая панель / Библиотека игр
+# Your Games
+# Followed Games
+# Owned Games
+# PLAYLISTS
+# New Playlist
+# Filter playlists...
+
+## Главная страница / Левая колонка / Блок заряда
 charge-title = Заряд
 charge-daily-quests-description = Выполняйте ежедневные квесты, чтобы заряжать свои сферы. Каждый день, когда вы пропускаете квест, ваша энергия уменьшается.
 charge-full-orbs-description = Как только все сферы будут заряжены, вы сможете поддержать своих любимых творцов на «Game Jolt», наклеив заряженную наклейку на их публикацию! Каждая заряженная наклейка расходует две заряженной сферы и ложит 💰💰💰 в их реальный кошелёк.
 
-## Блок создания публикации
-post-add-greeting = Привет, { $name }.
-post-add-placeholder = Ну что, о чём думаешь?
-
-## Блок квестов
+## Главная страница / Левая колонка / Блок квестов
 daily-quests-title = Ежедневные квесты
 duration-hours = { $value } ч.
 duration-minutes = { $value } м.
 duration-seconds = { $value } с.
 
-## Переключатель лент
+## Главная страница / Левая колонка / Блок пригласительной ссылки
+invite-link-title = Your invite link
+invite-link-copy = Copy
+invite-link-desc = Accounts created using your invite link automatically become your followers.
+
+## Главная страница / Левая колонка / Блок игр
+manage-games = Manage Games
+manage-games-hint = Filter games
+
+## Главная страница / Средняя колонка / Блок создания публикации
+post-add-greeting = Привет, { $name }.
+post-add-placeholder = Ну что, о чём думаешь?
+
+## Главная страница / Средняя колонка / Переключатель лент
 feed-following = Подписки
 feed-for-you = Для вас
 
-# Лента
+## Главная страница / Средняя колонка / Лента
 feed-show-new-items = Показать новые
+# feed-hours = 2 hours
